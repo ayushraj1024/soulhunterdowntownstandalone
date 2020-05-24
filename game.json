@@ -7367,6 +7367,18 @@
                 "GlobalVariable(MaxHealth)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "HasDied",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -12752,6 +12764,18 @@
                 "Health",
                 "=",
                 "GlobalVariable(MaxHealth)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "HasDied",
+                "=",
+                "0"
               ],
               "subInstructions": []
             }

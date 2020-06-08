@@ -7,7 +7,7 @@
     "revision": 0
   },
   "properties": {
-    "adMobAppId": "ca-app-pub-2192199899469430/4320652376",
+    "adMobAppId": "ca-app-pub-2192199899469430~4320652376",
     "adaptGameResolutionAtRuntime": true,
     "folderProject": false,
     "linuxExecutableFilename": "",
@@ -15022,7 +15022,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.304
+        "zoomFactor": 0.328
       },
       "objectsGroups": [],
       "variables": [],
@@ -15200,8 +15200,8 @@
           "locked": false,
           "name": "UpgradeScreenButton",
           "width": 0,
-          "x": 15,
-          "y": 1172,
+          "x": 18,
+          "y": 1010,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -15215,8 +15215,8 @@
           "locked": false,
           "name": "CoinSprite",
           "width": 60,
-          "x": 470,
-          "y": 1111,
+          "x": 468,
+          "y": 986,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -15230,8 +15230,8 @@
           "locked": false,
           "name": "PointSprite",
           "width": 0,
-          "x": 467,
-          "y": 1204,
+          "x": 465,
+          "y": 1074,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -15246,7 +15246,7 @@
           "name": "CoinText",
           "width": 0,
           "x": 553,
-          "y": 1119,
+          "y": 994,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -15260,8 +15260,8 @@
           "locked": false,
           "name": "PointText",
           "width": 0,
-          "x": 554,
-          "y": 1217,
+          "x": 552,
+          "y": 1082,
           "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
@@ -15915,6 +15915,29 @@
                 "=",
                 "GlobalVariableString(Points)"
               ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AdMob::LoadBanner"
+              },
+              "parameters": [
+                "\"ca-app-pub-2192199899469430/3350437203\"",
+                "",
+                "",
+                "yes",
+                "yes",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AdMob::ShowBanner"
+              },
+              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -17181,6 +17204,47 @@
         }
       ],
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "AdMob::LoadInterstitial"
+              },
+              "parameters": [
+                "\"ca-app-pub-2192199899469430/3857703666\"",
+                "",
+                "yes",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AdMob::ShowInterstitial"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
         {
           "disabled": false,
           "folded": false,
@@ -19267,7 +19331,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.418
+        "zoomFactor": 0.466
       },
       "objectsGroups": [],
       "variables": [],
@@ -19340,8 +19404,8 @@
           "locked": false,
           "name": "UpgradeText",
           "width": 0,
-          "x": 168,
-          "y": 14,
+          "x": 183,
+          "y": 130,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -19581,7 +19645,7 @@
           "name": "BackButton",
           "width": 0,
           "x": 48,
-          "y": 44,
+          "y": 161,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -19610,8 +19674,8 @@
           "locked": false,
           "name": "CoinSprite",
           "width": 0,
-          "x": 323,
-          "y": 156,
+          "x": 314,
+          "y": 276,
           "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
@@ -19625,8 +19689,8 @@
           "locked": false,
           "name": "CoinText",
           "width": 0,
-          "x": 379,
-          "y": 149,
+          "x": 373,
+          "y": 263,
           "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
@@ -20675,6 +20739,21 @@
                 "AttackSpeedUpgradeIndicator",
                 "=",
                 "GlobalVariable(AttackSpeedUpgradeIndicatorAnimationNumber)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AdMob::LoadBanner"
+              },
+              "parameters": [
+                "\"ca-app-pub-2192199899469430/6982560452\"",
+                "",
+                "",
+                "yes",
+                "yes",
+                "yes"
               ],
               "subInstructions": []
             }
